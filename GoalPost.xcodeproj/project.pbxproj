@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		7D777D1D206CBD0C00DD990A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D777D1C206CBD0C00DD990A /* AppDelegate.swift */; };
-		7D777D1F206CBD0C00DD990A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D777D1E206CBD0C00DD990A /* ViewController.swift */; };
+		7D777D1F206CBD0C00DD990A /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D777D1E206CBD0C00DD990A /* GoalsVC.swift */; };
 		7D777D22206CBD0C00DD990A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D777D20206CBD0C00DD990A /* Main.storyboard */; };
 		7D777D25206CBD0C00DD990A /* GoalPost.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D777D23206CBD0C00DD990A /* GoalPost.xcdatamodeld */; };
 		7D777D27206CBD0C00DD990A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D777D26206CBD0C00DD990A /* Assets.xcassets */; };
 		7D777D2A206CBD0C00DD990A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D777D28206CBD0C00DD990A /* LaunchScreen.storyboard */; };
+		7D777D36206CD6F600DD990A /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D777D35206CD6F600DD990A /* GoalCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D777D19206CBD0C00DD990A /* GoalPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D777D1C206CBD0C00DD990A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D777D1E206CBD0C00DD990A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D777D1E206CBD0C00DD990A /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
 		7D777D21206CBD0C00DD990A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D777D24206CBD0C00DD990A /* GoalPost.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoalPost.xcdatamodel; sourceTree = "<group>"; };
 		7D777D26206CBD0C00DD990A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D777D29206CBD0C00DD990A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D777D2B206CBD0C00DD990A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D777D35206CD6F600DD990A /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				7D777D33206CBD3D00DD990A /* Extensions */,
 				7D777D32206CBD3600DD990A /* Enums */,
+				7D777D34206CD6D200DD990A /* View */,
 				7D777D31206CBD2D00DD990A /* Controller */,
 				7D777D1C206CBD0C00DD990A /* AppDelegate.swift */,
 				7D777D20206CBD0C00DD990A /* Main.storyboard */,
@@ -72,7 +75,7 @@
 		7D777D31206CBD2D00DD990A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7D777D1E206CBD0C00DD990A /* ViewController.swift */,
+				7D777D1E206CBD0C00DD990A /* GoalsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -89,6 +92,14 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7D777D34206CD6D200DD990A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D777D35206CD6F600DD990A /* GoalCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D777D1F206CBD0C00DD990A /* ViewController.swift in Sources */,
+				7D777D36206CD6F600DD990A /* GoalCell.swift in Sources */,
+				7D777D1F206CBD0C00DD990A /* GoalsVC.swift in Sources */,
 				7D777D1D206CBD0C00DD990A /* AppDelegate.swift in Sources */,
 				7D777D25206CBD0C00DD990A /* GoalPost.xcdatamodeld in Sources */,
 			);
