@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreateGoalsVC: UIViewController {
+class CreateGoalsVC: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var goalPostTextView: UITextView!
     @IBOutlet weak var shortTermBtn: UIButton!
@@ -17,14 +17,11 @@ class CreateGoalsVC: UIViewController {
     
     
     
-    
-    
-    
     var status: GoalType = .ShortTerm
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        goalPostTextView.delegate = self
         nextBtn.bindToKeyboard()
         shortTermBtn.setSelectedColor()
         longTermBtn.deselectedColor()
@@ -46,10 +43,20 @@ class CreateGoalsVC: UIViewController {
     }
     
     @IBAction func nextPressed(_ sender: Any) {
+        if goalPostTextView.text != "" && goalPostTextView.text != "What is your goal?" {
+            guard let finishGoalVC = storyboard?.instantiateViewController(withIdentifier: "finishGoalVC") as? FinishGoalVC else {return}
+            finishGoalVC.initData(description: goalPostTextView.text!, type: status)
+            presentVC(finishGoalVC)
+        }
         
     }
     
     @IBAction func backPressed(_ sender: Any) {
         dismissVC()
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        goalPostTextView.text = ""
+        goalPostTextView.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     }
 }

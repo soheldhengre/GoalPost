@@ -15,10 +15,10 @@ class GoalCell: UITableViewCell {
     @IBOutlet weak var noOFDays: UILabel!
     
     
-    func configureCell(description:String, type: GoalType, progress: Int){
-        self.goalDescription.text = description
-        self.goalType.text = type.rawValue
-        self.noOFDays.text = String(describing: progress)
+    func configureCell(goal: Goal){
+        self.goalDescription.text = goal.goalDescription
+        self.goalType.text = goal.goalType
+        self.noOFDays.text = String(describing: goal.goalCompletionValue)
     }
 
 }

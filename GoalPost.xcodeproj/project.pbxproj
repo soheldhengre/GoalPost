@@ -19,6 +19,7 @@
 		7D777D36206CD6F600DD990A /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D777D35206CD6F600DD990A /* GoalCell.swift */; };
 		7D777D38206CEE7200DD990A /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D777D37206CEE7200DD990A /* GoalType.swift */; };
 		7D777D3A206CF85100DD990A /* CreateGoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D777D39206CF85100DD990A /* CreateGoalsVC.swift */; };
+		7D8F7413207224D3009D3448 /* FinishGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8F7412207224D3009D3448 /* FinishGoalVC.swift */; };
 		7E31E69873F2765CAD00531A /* Pods_GoalPost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A2525D6FA6415FDB2393CD /* Pods_GoalPost.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		7D777D35206CD6F600DD990A /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		7D777D37206CEE7200DD990A /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 		7D777D39206CF85100DD990A /* CreateGoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalsVC.swift; sourceTree = "<group>"; };
+		7D8F7412207224D3009D3448 /* FinishGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishGoalVC.swift; sourceTree = "<group>"; };
 		B010C998FC27B19E50736263 /* Pods-GoalPost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoalPost.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoalPost/Pods-GoalPost.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 			children = (
 				7D777D1E206CBD0C00DD990A /* GoalsVC.swift */,
 				7D777D39206CF85100DD990A /* CreateGoalsVC.swift */,
+				7D8F7412207224D3009D3448 /* FinishGoalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				7D24F160206D055B00054369 /* UIViewExt.swift in Sources */,
 				7D777D25206CBD0C00DD990A /* GoalPost.xcdatamodeld in Sources */,
 				7D24F15E206CFD3200054369 /* UIViewControllerExt.swift in Sources */,
+				7D8F7413207224D3009D3448 /* FinishGoalVC.swift in Sources */,
 				7D777D3A206CF85100DD990A /* CreateGoalsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
