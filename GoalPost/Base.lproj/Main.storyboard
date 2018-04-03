@@ -146,18 +146,39 @@
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6O-V2-LpK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal Complete..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTC-e0-erh">
+                                                            <rect key="frame" x="81.333333333333329" y="17.333333333333332" width="212.66666666666669" height="35.666666666666671"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.91764705879999997" green="0.66274509800000003" blue="0.2666666667" alpha="0.88027076198630139" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="cTC-e0-erh" firstAttribute="centerX" secondItem="z6O-V2-LpK" secondAttribute="centerX" id="0kO-WD-mNs"/>
+                                                        <constraint firstItem="cTC-e0-erh" firstAttribute="centerY" secondItem="z6O-V2-LpK" secondAttribute="centerY" id="Uir-m5-5gu"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="kIL-ZH-4yA" firstAttribute="leading" secondItem="qKR-bi-SPs" secondAttribute="leadingMargin" id="5Tw-vM-eQJ"/>
                                                 <constraint firstItem="xrX-A5-Hr4" firstAttribute="top" secondItem="qKR-bi-SPs" secondAttribute="top" constant="8" id="AK6-7C-8yd"/>
                                                 <constraint firstItem="xrX-A5-Hr4" firstAttribute="leading" secondItem="kIL-ZH-4yA" secondAttribute="trailing" constant="10" id="Ayd-bg-uGs"/>
                                                 <constraint firstAttribute="bottom" secondItem="xrX-A5-Hr4" secondAttribute="bottom" constant="8" id="K9o-8Y-Kch"/>
+                                                <constraint firstItem="z6O-V2-LpK" firstAttribute="top" secondItem="qKR-bi-SPs" secondAttribute="top" id="Xf9-x9-TGM"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="kIL-ZH-4yA" secondAttribute="bottom" id="bXf-gW-9VJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="z6O-V2-LpK" secondAttribute="bottom" id="h0H-V9-eRH"/>
                                                 <constraint firstAttribute="trailing" secondItem="xrX-A5-Hr4" secondAttribute="trailing" constant="8" id="hUZ-9R-C4J"/>
+                                                <constraint firstAttribute="trailing" secondItem="z6O-V2-LpK" secondAttribute="trailing" id="kk4-5P-7e9"/>
+                                                <constraint firstItem="z6O-V2-LpK" firstAttribute="leading" secondItem="qKR-bi-SPs" secondAttribute="leading" id="wGB-ZI-pZf"/>
                                                 <constraint firstItem="kIL-ZH-4yA" firstAttribute="top" secondItem="qKR-bi-SPs" secondAttribute="topMargin" id="zK5-Qa-bB6"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="completionView" destination="z6O-V2-LpK" id="zow-Vx-tnS"/>
                                             <outlet property="goalDescription" destination="DYp-bt-pw8" id="mIn-gP-M2A"/>
                                             <outlet property="goalType" destination="a9h-0e-Yy5" id="zmj-Hb-bAZ"/>
                                             <outlet property="noOFDays" destination="xrX-A5-Hr4" id="T34-tz-Jej"/>
@@ -186,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-98.400000000000006" y="118.96551724137932"/>
+            <point key="canvasLocation" x="-63" y="119"/>
         </scene>
         <!--Create GoalsVC-->
         <scene sceneID="AaH-1h-RbI">
