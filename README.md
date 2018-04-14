@@ -2,9 +2,9 @@
 GoalPost is an app that lets you add your long term and short term goal and maintain your daily progress.
 
 ## Pods Used:
-```pod 'IQKeyboardManagerSwift'```
+```pod 'IQKeyboardManagerSwift'``` <br>
 
-### Screenshots: 
+### Screenshots: <br>
 
 
 
